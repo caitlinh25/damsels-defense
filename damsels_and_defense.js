@@ -1,5 +1,6 @@
 var button;
 var canvas;
+var vid;
 
 function setup(){
   canvas = createCanvas(1345,640);
@@ -108,6 +109,11 @@ function stats4(){
 function stats5(){
   button5.hide();
 
+  button6 = createButton("-->")
+  button6.position(1200,570);
+  button6.size(100,40);
+  button6.mousePressed(lesson1);
+
   background(45);
   fill(255,218,185);
   rect(30, 40, 1277, 571);
@@ -117,3 +123,29 @@ function stats5(){
   fill(0,0,0);
   text(info5,650, 170);
 }
+
+function lesson1(){
+  button6.hide();
+
+  vid = createVideo ("lesson1.mp4");
+
+  createCanvas(710,400);
+  vid.size(1000, 900);
+  horizAlighn(CENTER);
+
+  vid.loop();
+}
+// function selection(){
+// button6.hide();
+//
+//   textAlign(CENTER);
+//   background(250);
+//   sel = createSelect();
+//   sel.position(10, 12);
+//   sel.option('1');
+//   sel.option('2');
+//   sel.option('3');
+//   sel.option('4');
+//
+//   sel.changed(myselect);
+// }
