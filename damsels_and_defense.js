@@ -99,7 +99,7 @@ function stats4(){
   fill(255,218,185);
   rect(30, 40, 1277, 571);
 
-  info4 = " Statics have shown that \n about 55% of the times these assaults \n happened either at or near the \n victim's house."
+  info4 = " Statistics have shown that \n about 55% of the time, these assaults \n happened either at or near the \n victim's house."
   textAlign("center");
   fill(0,0,0);
   text(info4,650, 170);
