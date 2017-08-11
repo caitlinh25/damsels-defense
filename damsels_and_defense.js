@@ -125,14 +125,12 @@ function stats5(){
 }
 
 function lesson1(){
+  console.log("hey");
+  background(45);
   button6.hide();
-
   vid = createVideo ("lesson1.mp4");
-
-  createCanvas(710,400);
   vid.size(1000, 900);
-  horizAlighn(CENTER);
-
+  // horizAlign(CENTER);
   vid.loop();
 }
 // function selection(){
